@@ -23,7 +23,7 @@
     "type": "git",
     "url": "https://github.com/${ github.user }/${ name }"
   },
-  "homepage": "https://github.com/${ github.user }/${ name }"
+  "homepage": "https://github.com/${ github.user }/${ name }",
   <% } %>  
   "license": "MIT"
 }
