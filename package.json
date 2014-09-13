@@ -1,7 +1,7 @@
 {
   "name": "nmg",
   "version": "0.1.0",
-  "description": "Node Module Generator",
+  "description": "(my) Node Module Generator",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
