@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 var yargs = require('yargs')
 var config = require('./config.js')
 
