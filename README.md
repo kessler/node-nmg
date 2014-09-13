@@ -1,5 +1,15 @@
 # my Node Module Generator - WIP
 
+since not published to npm yet 
+```
+	npm install -g kessler/node-nmg
+```
+configure and then
+```
+	nmg create module
+```
+
+
 # todo
 - add makefile to minimal
 - add .editorconfig to minimal
