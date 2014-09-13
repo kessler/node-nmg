@@ -1,0 +1,29 @@
+{
+  "name": "${ name }",
+  "version": "0.0.1",
+  "description": "${ description }",
+  "main": "index.js",  
+  "scripts": {
+    "test": "mocha -R spec"
+  },
+  "dependencies": {},
+  <% 
+    if (private) { 
+  %>
+    "private": true, 
+  <% } %>  
+  <% if (author) { %> 
+    "author": "${ author }", 
+  <% } %>
+  <% if (github.user) { %>
+  "bugs": {
+    "url": "https://github.com/${ github.user }/${ name }/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/${ github.user }/${ name }"
+  },
+  "homepage": "https://github.com/${ github.user }/${ name }"
+  <% } %>  
+  "license": "MIT"
+}
