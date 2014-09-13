@@ -7,6 +7,7 @@ since not published to npm yet
 configure and then
 ```
 	nmg create module
+	nmg create module --github // also create a repo on github
 ```
 
 
