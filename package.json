@@ -25,7 +25,6 @@
   "homepage": "https://github.com/kessler/nmg",
   "dependencies": {
     "gulp": "^3.8.8",
-    "gulp-prompt": "^0.1.1",
     "gulp-template": "^1.1.0",
     "gulp-util": "^3.0.1",
     "homedir": "^0.3.0",

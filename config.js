@@ -20,6 +20,6 @@ var config = rc('nmg', {
 	} 
 })
 
-config.output = path.join(homedir(), 'dev', 'nodejs', config.context.name)
+config.output = path.join(process.cwd(), config.context.name)
 
 module.exports = config

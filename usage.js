@@ -6,7 +6,7 @@ module.exports = table([
 [''],
 ['Options:'],
 ['--template',				'a glob expression',		'[default: minimal template]'],
-['--output',				'module output path',		'[default: ~/dev/nodejs/${name}]'],
+['--output',				'module output path',		'[default: process.cwd()/${name}]'],
 ['--github',				'create a repo on github',	''],
 ['--githubToken',			'github api token',			''],
 ['--context.private',		'private repo/package',		'[default: false]'],
