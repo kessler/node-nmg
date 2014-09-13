@@ -17,6 +17,7 @@ if (['create'].indexOf(command) === -1) {
 	process.exit(1)
 }
 
+// TODO: hacky code cleanup here 
 // super ugly hack to prevent gulp from throwing an error on the project name argument (gulp thinks its another task to run)
 if (config._.length > 1) {
 	for (var i = 0; i < config._.length; i++) {
@@ -28,10 +29,11 @@ if (config._.length > 1) {
 	}
 }
 
+// TODO: hacky code cleanup here 
 // change gulp's cwd
-process.argv.push('cwd')
-process.argv.push(__dirname)
+// TODO test this works in windows
+process.argv.push('--cwd=' + __dirname)
 
 // TODO: need to send PR to gulp that separates all the orchastration of the cli from the actual cli source file
 // so it can be invoked programmatically, especially with custom argv
-require('./node_modules/gulp/bin/gulp.js')	
+require('./node_modules/gulp/bin/gulp.js')
