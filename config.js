@@ -22,7 +22,7 @@ var config = rc('nmg', {
 
 // TODO: hacky code cleanup here 
 if (config._.length >= 2) {
-	config.context.name = config._[1]
+	config.context.name = config._[1].toString()
 }
 
 config.output = path.join(process.cwd(), config.context.name)
