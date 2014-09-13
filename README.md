@@ -1,6 +1,4 @@
-# my module generator
-
-WIP
+# my Node Module Generator - WIP
 
 # todo
 - add makefile to minimal
