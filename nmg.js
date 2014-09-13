@@ -28,10 +28,9 @@ if (config._.length > 1) {
 	}
 }
 
+// change gulp's cwd
 process.argv.push('cwd')
-process.argv.push(path.resolve(__dirname, '..'))
-
-console.log(process.argv)
+process.argv.push(__dirname)
 
 // TODO: need to send PR to gulp that separates all the orchastration of the cli from the actual cli source file
 // so it can be invoked programmatically, especially with custom argv
