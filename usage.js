@@ -2,7 +2,7 @@ var table = require('text-table');
 
 module.exports = table([
 ['Commands:'],
-['create',					'create a repo command'],
+['create [name]',					'create a repo command'],
 [''],
 ['Options:'],
 ['--template',				'a glob expression',		'[default: minimal template]'],
