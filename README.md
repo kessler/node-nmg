@@ -3,7 +3,20 @@
 ```
 	npm install -g nmg
 ```
-configure and then
+configure by creating an [rc](https://github.com/dominictarr/rc) config somewhere (probably ~/.config)
+```
+{
+	"context": {
+		"author": "[your name]",
+		"github": {
+			"user": "[your github username]"
+		}
+	},
+
+	"githubToken": "[a github token with repo permissions]"
+}
+```
+and then
 ```
 	nmg create module
 	nmg create module --github // also create a repo on github
