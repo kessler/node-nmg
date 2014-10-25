@@ -1,16 +1,15 @@
 # my Node Module Generator - WIP
 
-since not published to npm yet 
 ```
-	npm install -g kessler/node-nmg
+	npm install -g nmg
 ```
 configure and then
 ```
 	nmg create module
 	nmg create module --github // also create a repo on github
-
+	nmg create module --gitinit // also create a local git repo, add all files and do initial commit
+	nmg create module --inithub // combine the above two commands
 ```
-
 
 # todo
 - add makefile to minimal

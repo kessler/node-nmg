@@ -7,6 +7,7 @@ var cloneDeep = require('lodash.clonedeep')
 var child = require('child_process')
 var async = require('async')
 var _ = require('lodash')
+var rename = require("gulp-rename");
 
 var usage = require('./usage.js')
 var config = require('./config.js')
@@ -54,9 +55,22 @@ gulp.task('create', createDeps, function (cb) {
 */	
 gulp.task('create-module', function() {
 	
-	return gulp.src(config.template)		
+	return gulp.src(config.template)
+	.pipe(rename(function (path) {
+		
+		if (path.basename === '_npmignore') {
+			log('renaming _npmignore to .npmignore')
+			path.basename = '.npmignore'
+		}
+
+		if (path.basename === '_gitignore') {
+			log('renaming _gitignore to .gitignore')
+			path.basename = '.gitignore'
+		}
+	}))		
 	.pipe(template(config.context))
 	.pipe(gulp.dest(config.output))
+
 })
 
 /*
@@ -94,7 +108,7 @@ gulp.task('gitinit', subtaskDeps, function (cb) {
 	log('for github repository ' + url)
 
 	process.chdir(config.output)
-	
+
 	async.series([
 		_.partial(git, 'init'),
 		_.partial(git, 'add --all'),

@@ -26,6 +26,7 @@
   "dependencies": {
     "async": "^0.9.0",
     "gulp": "^3.8.9",
+    "gulp-rename": "^1.2.0",
     "gulp-template": "^1.1.0",
     "gulp-util": "^3.0.1",
     "homedir": "^0.3.0",
