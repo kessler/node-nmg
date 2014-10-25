@@ -24,10 +24,12 @@
   },
   "homepage": "https://github.com/kessler/nmg",
   "dependencies": {
-    "gulp": "^3.8.8",
+    "async": "^0.9.0",
+    "gulp": "^3.8.9",
     "gulp-template": "^1.1.0",
     "gulp-util": "^3.0.1",
     "homedir": "^0.3.0",
+    "lodash": "^2.4.1",
     "lodash.clonedeep": "^2.4.1",
     "octonode": "^0.6.5",
     "rc": "^0.5.1",

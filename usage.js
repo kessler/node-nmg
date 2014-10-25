@@ -3,6 +3,7 @@ var table = require('text-table');
 module.exports = table([
 ['Commands:'],
 ['create [name]',					'create a repo command'],
+['gitinit [name]',					'init a local git repository, add all files and commit'],
 [''],
 ['Options:'],
 ['--template',				'a glob expression',		'[default: minimal template]'],

@@ -11,7 +11,7 @@ if (!config._ || config._.length === 0) {
 
 var command = config._[0]
 
-if (['create'].indexOf(command) === -1) {
+if (['create', 'gitinit', 'create-github'].indexOf(command) === -1) {
 	console.error('ERROR: unknown command %s\n', command)
 	console.error(usage)
 	process.exit(1)

@@ -8,6 +8,7 @@ var templates = {
 }
 
 var config = rc('nmg', {
+	gitCmd: 'git',
 	template: [ templates.minimal ],
 	context: {
 		private: false,
