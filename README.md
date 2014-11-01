@@ -23,7 +23,6 @@ and then
 	nmg create module --gitinit // also create a local git repo, add all files and do initial commit
 	nmg create module --inithub // combine the above two commands
 ```
-
 # todo
 - add makefile to minimal
 - add .editorconfig to minimal
