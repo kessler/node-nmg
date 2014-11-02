@@ -9,6 +9,7 @@ var templates = {
 
 var config = rc('nmg', {
 	gitCmd: 'git',
+	repoNamePrefix: 'node-',
 	template: [ templates.minimal ],
 	context: {
 		private: false,

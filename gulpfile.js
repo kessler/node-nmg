@@ -79,8 +79,8 @@ gulp.task('create-module', function() {
 gulp.task('create-github', subtaskDeps,  function (cb) {
 	var github = require('./github.js')
 	var context = cloneDeep(config.context)
-	//TODO this node- concatenation is not good, and is not centralized as well
-	context.name = 'node-' + context.name	
+	
+	context.name = config.repoNamePrefix + context.name	
 
 	github.getRepo(context, function (err, exists, info) {
 
@@ -104,8 +104,8 @@ gulp.task('create-github', subtaskDeps,  function (cb) {
 gulp.task('gitinit', subtaskDeps, function (cb) {
 	var context = cloneDeep(config.context)
 	
-	//TODO this node- concatenation is not good, and is not centralized as well
-	context.name = 'node-' + context.name	
+	
+	context.name = config.repoNamePrefix + context.name	
 
 	var url = util.format('https://github.com/%s/%s', context.github.user, context.name)
 	log('initializing git repo at ' + config.output)
