@@ -9,8 +9,8 @@ var templates = {
 
 var config = rc('nmg', {
 	gitCmd: 'git',
-	repoNamePrefix: 'node-',
 	template: [ templates.minimal ],
+	private: false,
 	context: {
 		private: false,
 		name: 'nmg-module',
@@ -25,6 +25,10 @@ var config = rc('nmg', {
 // TODO: hacky code cleanup here 
 if (config._.length >= 2) {
 	config.context.name = config._[1].toString()
+}
+
+if (config.private) {
+	config.context.private = true
 }
 
 config.output = path.join(process.cwd(), config.context.name)

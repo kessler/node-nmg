@@ -4,7 +4,7 @@ var usage = require('./usage.js')
 var path = require('path')
 
 if (!config._ || config._.length === 0) {
-	console.error('ERROR: missing any command\n')
+	console.error('ERROR: missing a command\n')
 	console.error(usage)
 	process.exit(1)
 }
@@ -13,6 +13,10 @@ var command = config._[0]
 
 if (['create', 'gitinit', 'create-github'].indexOf(command) === -1) {
 	console.error('ERROR: unknown command %s\n', command)
+	console.error(usage)
+	process.exit(1)
+} else if (!config._[1]) {
+	console.error('ERROR: missing name\n')
 	console.error(usage)
 	process.exit(1)
 }

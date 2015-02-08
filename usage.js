@@ -3,7 +3,7 @@ var table = require('text-table');
 module.exports = table([
 ['Commands:'],
 ['create [name]',					'create a repo command'],
-['create-github [name]',			'create a github repository (create [name] --github will do that too)'],
+['create-github [name]',			'only create a github repository)'],
 ['gitinit [name]',					'init a local git repository, add all files and commit'],
 [''],
 ['Options:'],
@@ -14,8 +14,7 @@ module.exports = table([
 ['--githubToken',			'github api token',					''],
 ['--template',				'a glob expression',				'[default: minimal template]'],
 ['--output',				'module output path',				'[default: process.cwd()/${name}]'],
-['--context.private',		'private repo/package',			'[default: false]'],
-['--context.name',			'module/repo name',				'[default: "nmg-module"]'],
+['--private',				'private repo/package',			'[default: false]'],
 ['--context.description',	'module/repo description',			''],
 ['--context.author',		'author name',						'[default: "me"]'],
 ['--context.github.user',	'github user name',				'']
