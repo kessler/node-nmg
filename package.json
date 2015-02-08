@@ -1,6 +1,6 @@
 {
   "name": "nmg",
-  "version": "0.2.4",
+  "version": "0.4.4",
   "description": "(my) Node Module Generator",
   "main": "index.js",
   "scripts": {
